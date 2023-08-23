@@ -1,40 +1,100 @@
-INSERT INTO public.passangers(
-	name, address, date_birth)
-	VALUES (
-		'Frasier Sulland', '26866 Talisman Hill', '1999-02-16',
-		'Donelle Bachmann', '854 Cherokee Junction', '1997-04-14',
-		'Darnell Tivenan', '27828 Hagan Avenue', '1997-02-13',
-		'Frances Clancy', '81158 5th Drive', '1995-01-07',
-		'Madalyn Bridywater', '58430 Blackbird Avenue', '1999-03-04',
-		'Malia Osinin', '0 Russell Way', '1997-10-17',
-		'Hollyanne Walkinshaw', '94 Nancy Junction', '1997-05-29',
-		'Daffy Kettlesting', '37542 South Plaza', '1998-02-15',
-		'Malva Beaglehole', '04 Ohio Park', '1995-10-14',
-		'Fabio Adriani', '878 Golf Course Circle', '1998-09-30');
-
-INSERT INTO public.stations(name, address)
-	VALUES ('Baquedano', 'Av. Libertador Bernardo O''Higgins 334'),
-    ('Los Leones', 'Av. Providencia 628'),
-    ('Universidad de Chile', 'Av. Libertador Bernardo O''Higgins 1050'),
-    ('La Moneda', 'Av. Libertador Bernardo O''Higgins 1875'),
-    ('Santa Lucía', 'Av. Libertador Bernardo O''Higgins 464'),
-    ('Manuel Montt', 'Av. Providencia 2059'),
-    ('Ñuñoa', 'Av. Irarrázaval 5100'),
-    ('Franklin', 'Av. Matucana 422'),
-    ('Pudahuel', 'Av. San Pablo 8770'),
-    ('Plaza Egaña', 'Av. Larraín 5862');
-
-INSERT INTO public.trains(model, capacity)
-	VALUES ('MetroTrain 1000', 200),
-    ('ExpressRail 200', 150),
-    ('CityTransit 300', 180),
-    ('RapidExpress 400', 220),
-    ('UrbanShuttle 500', 120);
-
-INSERT INTO public.router(id_stations, id_trains, name)
-	VALUES (1, 1, 'Línea 1: Baquedano a Los Leones'),
-    	(2, 2, 'Línea 2: Los Leones a Universidad de Chile'),
-    	(3, 3, 'Línea 3: Universidad de Chile a La Moneda'),
-    	(4, 4, 'Línea 4: La Moneda a Santa Lucía'),
-    	(5, 5, 'Línea 5: Santa Lucía a Manuel Montt');
-
+insert into public.passangers (name, address, date_birth) values ('Bern Belasco', '64 Dorton Center', '1994-12-24');
+insert into public.passangers (name, address, date_birth) values ('Orsola Affuso', '57 Ilene Drive', '1992-09-17');
+insert into public.passangers (name, address, date_birth) values ('Sholom Hawson', '059 Waxwing Terrace', '1998-01-25');
+insert into public.passangers (name, address, date_birth) values ('Dolly Ida', '3082 Schlimgen Drive', '1992-06-04');
+insert into public.passangers (name, address, date_birth) values ('Thurstan Verriour', '5755 Bultman Hill', '1990-10-20');
+insert into public.passangers (name, address, date_birth) values ('Binky Joseph', '763 Crest Line Park', '1998-05-15');
+insert into public.passangers (name, address, date_birth) values ('Zak Kovnot', '4677 Hoffman Drive', '1993-07-03');
+insert into public.passangers (name, address, date_birth) values ('Sallyanne Maraga', '29 Porter Court', '1992-05-11');
+insert into public.passangers (name, address, date_birth) values ('Druci Rentalll', '4 Alpine Point', '1996-04-02');
+insert into public.passangers (name, address, date_birth) values ('Sileas Mallord', '7642 Scofield Parkway', '2000-08-23');
+insert into public.passangers (name, address, date_birth) values ('Denys Richford', '2 Prentice Center', '1999-05-26');
+insert into public.passangers (name, address, date_birth) values ('Talbot Dodell', '3 Mayer Parkway', '2002-10-19');
+insert into public.passangers (name, address, date_birth) values ('Kale Beine', '11 Monterey Plaza', '2003-09-25');
+insert into public.passangers (name, address, date_birth) values ('Anselma Niccolls', '712 Pepper Wood Road', '1997-04-27');
+insert into public.passangers (name, address, date_birth) values ('Prince Gristhwaite', '73 Dapin Trail', '2005-07-04');
+insert into public.passangers (name, address, date_birth) values ('Munroe Stelljes', '3 Kim Avenue', '2001-01-04');
+insert into public.passangers (name, address, date_birth) values ('Augustin Fursse', '803 South Point', '1996-01-25');
+insert into public.passangers (name, address, date_birth) values ('Byrom Vigus', '6 Scofield Street', '1997-08-01');
+insert into public.passangers (name, address, date_birth) values ('Catharina Antognetti', '1643 Sunnyside Alley', '1997-03-03');
+insert into public.passangers (name, address, date_birth) values ('Felipa McGlashan', '944 Sutteridge Center', '2002-08-04');
+insert into public.passangers (name, address, date_birth) values ('Barth Calbreath', '152 Eagle Crest Plaza', '1997-08-12');
+insert into public.passangers (name, address, date_birth) values ('Dennis Wormleighton', '40 Graedel Place', '2002-11-08');
+insert into public.passangers (name, address, date_birth) values ('Clarke MacPhee', '8 Doe Crossing Trail', '2003-11-30');
+insert into public.passangers (name, address, date_birth) values ('Amii Matzaitis', '57259 Mcguire Way', '1994-06-15');
+insert into public.passangers (name, address, date_birth) values ('Goldi Cowser', '22 Anzinger Pass', '1993-06-12');
+insert into public.passangers (name, address, date_birth) values ('Carmelina Jorioz', '34 Sundown Plaza', '1994-01-22');
+insert into public.passangers (name, address, date_birth) values ('Herve Trimnell', '5 Loeprich Way', '2001-04-20');
+insert into public.passangers (name, address, date_birth) values ('Yancy Bwy', '20439 Farwell Place', '1994-08-01');
+insert into public.passangers (name, address, date_birth) values ('Brew Fonteyne', '5 Springview Court', '1996-12-27');
+insert into public.passangers (name, address, date_birth) values ('Nikolaos Lainge', '08110 Clemons Pass', '1993-12-14');
+insert into public.passangers (name, address, date_birth) values ('Julia Pepall', '829 Atwood Way', '1997-11-13');
+insert into public.passangers (name, address, date_birth) values ('Cyril Hamill', '799 Paget Street', '2001-01-20');
+insert into public.passangers (name, address, date_birth) values ('Alfy Dabbes', '51728 Macpherson Road', '2004-07-14');
+insert into public.passangers (name, address, date_birth) values ('Corey Soldan', '276 Basil Parkway', '1994-12-21');
+insert into public.passangers (name, address, date_birth) values ('Sloan Blackstone', '1 Holy Cross Pass', '2004-02-28');
+insert into public.passangers (name, address, date_birth) values ('Denny Doldon', '732 Village Green Circle', '1996-04-18');
+insert into public.passangers (name, address, date_birth) values ('Matty Carlsen', '2 Northridge Terrace', '2003-10-24');
+insert into public.passangers (name, address, date_birth) values ('Lissie Gann', '1 Butterfield Point', '2005-05-19');
+insert into public.passangers (name, address, date_birth) values ('Westbrooke Durbin', '16029 Oak Valley Drive', '1995-02-05');
+insert into public.passangers (name, address, date_birth) values ('Kimmi Sanja', '0 Kropf Circle', '2002-08-01');
+insert into public.passangers (name, address, date_birth) values ('Phyllis Younghusband', '8282 Larry Center', '2003-09-13');
+insert into public.passangers (name, address, date_birth) values ('Bessie McSkeagan', '944 Troy Trail', '1995-06-15');
+insert into public.passangers (name, address, date_birth) values ('Jo ann Nattriss', '75 Mayfield Center', '2003-12-25');
+insert into public.passangers (name, address, date_birth) values ('Johnna Martensen', '203 Grasskamp Pass', '2005-08-11');
+insert into public.passangers (name, address, date_birth) values ('Lauritz Haile', '624 Bultman Trail', '2004-03-08');
+insert into public.passangers (name, address, date_birth) values ('Harmonia Alves', '94 Lakewood Junction', '2003-12-07');
+insert into public.passangers (name, address, date_birth) values ('Aleda Ranshaw', '8 Scofield Plaza', '1992-11-04');
+insert into public.passangers (name, address, date_birth) values ('Pia Shine', '967 Debs Court', '1999-07-22');
+insert into public.passangers (name, address, date_birth) values ('Crista Fathers', '0 Annamark Avenue', '1999-06-30');
+insert into public.passangers (name, address, date_birth) values ('Ossie Arnall', '39904 Sunnyside Junction', '1997-09-09');
+insert into public.passangers (name, address, date_birth) values ('Jessa Bowlands', '7 Northridge Hill', '1991-05-05');
+insert into public.passangers (name, address, date_birth) values ('Vanny Dollard', '2 Talisman Avenue', '1997-03-18');
+insert into public.passangers (name, address, date_birth) values ('Colby Alessandrucci', '1109 Sachtjen Drive', '2001-12-24');
+insert into public.passangers (name, address, date_birth) values ('Tara Ilieve', '49 Messerschmidt Center', '2002-04-04');
+insert into public.passangers (name, address, date_birth) values ('Onfroi Bunten', '8972 Rigney Terrace', '1991-03-26');
+insert into public.passangers (name, address, date_birth) values ('Katie Chadburn', '9 Delladonna Plaza', '1997-07-09');
+insert into public.passangers (name, address, date_birth) values ('Britt Giovannacc@i', '3 Florence Way', '1995-08-26');
+insert into public.passangers (name, address, date_birth) values ('Marmaduke Twitchett', '6907 Kedzie Park', '2003-08-19');
+insert into public.passangers (name, address, date_birth) values ('Betsey Wellsman', '51 Mesta Alley', '1991-06-13');
+insert into public.passangers (name, address, date_birth) values ('Gard Hrachovec', '6 Del Sol Court', '1991-02-02');
+insert into public.passangers (name, address, date_birth) values ('Maxim Pesticcio', '046 Stang Avenue', '2003-07-16');
+insert into public.passangers (name, address, date_birth) values ('Carley Chastel', '4192 David Point', '1994-10-02');
+insert into public.passangers (name, address, date_birth) values ('Silvan Zanolli', '26069 Service Parkway', '2004-04-04');
+insert into public.passangers (name, address, date_birth) values ('Skye Murkus', '29024 Walton Drive', '1993-04-20');
+insert into public.passangers (name, address, date_birth) values ('Filbert Kosiada', '6310 Upham Avenue', '2004-01-31');
+insert into public.passangers (name, address, date_birth) values ('Benedikt Weed', '945 Elka Pass', '2002-09-24');
+insert into public.passangers (name, address, date_birth) values ('Chandler Bartomieu', '7 Columbus Terrace', '2005-06-26');
+insert into public.passangers (name, address, date_birth) values ('Silvester Gonzalvo', '1 Coleman Parkway', '1998-01-22');
+insert into public.passangers (name, address, date_birth) values ('Jack Nunes Nabarro', '54 Delladonna Court', '1995-01-20');
+insert into public.passangers (name, address, date_birth) values ('Durante Acomb', '39 Sycamore Hill', '2005-02-26');
+insert into public.passangers (name, address, date_birth) values ('Nike Dillinton', '5 Northfield Pass', '1992-05-09');
+insert into public.passangers (name, address, date_birth) values ('Hortense Lygo', '527 Melrose Place', '1996-01-16');
+insert into public.passangers (name, address, date_birth) values ('Carmelita Grube', '81 Fair Oaks Park', '2003-05-29');
+insert into public.passangers (name, address, date_birth) values ('Hunt Cayzer', '868 Superior Center', '1993-04-17');
+insert into public.passangers (name, address, date_birth) values ('Randee Comelli', '28 Moulton Junction', '1995-04-30');
+insert into public.passangers (name, address, date_birth) values ('Dalila Fasset', '26390 Derek Center', '1994-03-26');
+insert into public.passangers (name, address, date_birth) values ('Jasun Egentan', '97926 Sutteridge Lane', '2003-02-05');
+insert into public.passangers (name, address, date_birth) values ('Pamelina Alwell', '94 5th Circle', '1995-03-24');
+insert into public.passangers (name, address, date_birth) values ('Verene Brusby', '02 Coolidge Drive', '2003-09-05');
+insert into public.passangers (name, address, date_birth) values ('Gerrie Giraux', '23 Browning Court', '2003-02-14');
+insert into public.passangers (name, address, date_birth) values ('Idette Bazylets', '299 Monica Terrace', '1995-06-07');
+insert into public.passangers (name, address, date_birth) values ('Jeffie Siemianowicz', '772 Prairie Rose Street', '1999-11-25');
+insert into public.passangers (name, address, date_birth) values ('Shoshana Delatour', '98407 Bartillon Parkway', '1991-11-21');
+insert into public.passangers (name, address, date_birth) values ('Frannie Cockshutt', '808 Blaine Avenue', '1995-08-18');
+insert into public.passangers (name, address, date_birth) values ('Bentlee MacDonogh', '0 Hovde Junction', '2002-12-02');
+insert into public.passangers (name, address, date_birth) values ('Aloisia Janeczek', '96099 Redwing Way', '1998-10-16');
+insert into public.passangers (name, address, date_birth) values ('Shellysheldon Reiach', '0439 Summit Park', '1994-10-12');
+insert into public.passangers (name, address, date_birth) values ('Judy Gibbon', '965 Oriole Street', '1999-03-02');
+insert into public.passangers (name, address, date_birth) values ('Aubrey Lamy', '117 Golden Leaf Road', '1997-03-12');
+insert into public.passangers (name, address, date_birth) values ('Egor Wackly', '54929 Mifflin Street', '1999-03-13');
+insert into public.passangers (name, address, date_birth) values ('Tonye Matokhnin', '66808 Toban Plaza', '1994-09-17');
+insert into public.passangers (name, address, date_birth) values ('Sybil Murrill', '66 Anhalt Point', '1997-07-01');
+insert into public.passangers (name, address, date_birth) values ('Olivero Arnow', '33141 Farwell Road', '2004-04-24');
+insert into public.passangers (name, address, date_birth) values ('Tabbie Agneau', '65493 Arkansas Junction', '2004-05-02');
+insert into public.passangers (name, address, date_birth) values ('Nadean People', '43667 Mallard Junction', '1996-04-04');
+insert into public.passangers (name, address, date_birth) values ('Stafani Lober', '3 Stang Center', '1995-11-11');
+insert into public.passangers (name, address, date_birth) values ('Fredrika Cases', '8690 Talisman Drive', '2000-09-05');
+insert into public.passangers (name, address, date_birth) values ('Amil Pethick', '4 Laurel Way', '1999-03-02');
+insert into public.passangers (name, address, date_birth) values ('Callean Stare', '99682 Bonner Pass', '1998-04-09');
+insert into public.passangers (name, address, date_birth) values ('Kristin Beckles', '35314 Tony Circle', '1999-12-14');
