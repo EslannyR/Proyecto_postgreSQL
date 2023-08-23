@@ -1,7 +1,7 @@
 CREATE TABLE public.passangers
 (
     id serial NOT NULL,
-    name character varying(100) NOT NULL,
+    name character varying(100),
     address character varying,
     date_birth date,
     CONSTRAINT passangers_pkey PRIMARY KEY (id)
