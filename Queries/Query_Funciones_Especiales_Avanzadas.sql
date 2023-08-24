@@ -41,3 +41,19 @@ ELSE 'Menor de edad'
 END AS Status
 FROM passangers
 ORDER BY iniciales DESC; /*Y hacemos un Order By para que me muestre las iniciales con guion en la parte inferior de la tabla*/
+
+/*Otra forma de hacerlo es esta, donde separamos los nombres iniciados con vocales y consonantes*/
+SELECT id, name,
+    CASE
+        WHEN name ILIKE 'a%' OR name ILIKE 'e%' OR name ILIKE 'i%' OR name ILIKE 'o%' OR name ILIKE 'u%'
+        THEN 'Vocales'
+        ELSE 'Consonantes'
+    END AS Iniciales,
+    address, date_birth,
+    CASE
+        WHEN DATE_PART('year', CURRENT_DATE) - DATE_PART('year', date_birth) >= 18
+        THEN 'Mayor de edad'
+        ELSE 'Menor de edad'
+    END AS Status
+FROM passangers
+ORDER BY Iniciales DESC;
