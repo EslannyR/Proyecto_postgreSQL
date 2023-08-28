@@ -25,6 +25,13 @@ GRANT ALL ON TABLE public.vip TO postgres;
 
 GRANT ALL ON TABLE public.vip TO user_consulta;
 
+--Insertamos datos a la tabla Vip
+INSERT INTO public.vip(
+	id, date)
+	VALUES (50, 2010-01-01);
+
+
+
 --Activamos la extensión de dblink
 CREATE EXTENSION dblink;
 
